@@ -16,18 +16,18 @@ const server = http.createServer((req, res) => {
         })
     }
 
-    if (req.url === '/') {
+    if (req.url === './') {
 
         handlefile("index.html", 200, req, res);
         
     }
 
-    else if (req.url === '/about', req, res) {
+    else if (req.url === './about', req, res) {
         handlefile("about.html", 200);
         
     }
 
-    else if (req.url === '/contact' ,req, res) {
+    else if (req.url === './contact' ,req, res) {
         handlefile("contact.html", 200);
         
     }
